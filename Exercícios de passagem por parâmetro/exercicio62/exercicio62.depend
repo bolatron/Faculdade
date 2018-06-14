@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1527567069 source:c:\users\user\desktop\projetos em c\arquivos do codeblocks\exercícios de passagem por parâmetro\exercicio62\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
