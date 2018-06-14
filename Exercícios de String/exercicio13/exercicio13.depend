@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1525466269 source:c:\users\user\desktop\projetos em c\exercícios de string\exercicio13\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
