@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1521158097 source:c:\users\user\desktop\exercícios de entrada e saída\exercício 8\teste1\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+
