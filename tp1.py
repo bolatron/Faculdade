@@ -1,0 +1,23 @@
+from igraph import *
+import numpy as np
+
+gr = Graph.Read_GML('power.gml')
+agm = gr.spanning_tree(weights=None, return_tree=True)
+gr_center = gr.closeness(vertices=None, mode=ALL, cutoff=None, weights=None, normalized=True)
+agm_center = agm.closeness(vertices=None, mode=ALL, cutoff=None, weights=None, normalized=True)
+#source_matrix = np.array(gr.get_adjacency())
+#table = np.array(gr.shortest_paths(source=1, target=None, weights=None, mode=OUT))
+#table = gr.shortest_paths(source=None, target=None, weights=None, mode=OUT)
+print("Análise do grafo:")
+print("----------------------------")
+print("É conectado:       ", gr.is_connected())
+print("É bipartido:       ", gr.is_bipartite())
+print("É direcionado:     ", gr.is_directed())
+print("Vértice do centro: ", np.argmax(gr_center), "-- ", np.max(gr_center))
+print("AGM center:        ", np.argmax(agm_center), "-- ", np.max(agm_center))
+print("----------------------------\n")
+summary(gr)
+summary(agm)
+print(np.max(gr.degree()))
+print(np.max(agm.degree()))
+#plot(gr.topological_sorting())
